@@ -1,0 +1,98 @@
+/* Font -------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+.staff-header-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+/* Section Title Bar */
+.header2 {
+    border-radius: 16px;
+    margin-top: 1px;
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: regular;
+    font-family: "Luckiest Guy", serif;
+    background: linear-gradient(to right, #f5c4cc, #dfa1fc, #e583f1, #e69bf0);
+    box-shadow: 0px -2px 8px rgba(99, 6, 91, 0.1);
+    color: #63067a;
+}
+
+/* Main Container Card */
+.container {
+    max-width: 500px;
+    width: 90%;
+    padding: 30px;
+    margin: 30px auto;
+    background: linear-gradient(to right, #ceabc3, #c28bdb,rgb(173, 69, 194));
+    border-radius: 16px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Title inside Card */
+.categories {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+}
+
+/* Navigation Buttons */
+nav.staff {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+nav.staff a {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 25px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+nav.staff a:hover {
+    background-color: #fcc5e1;
+    color: #9118c5;
+    transform: scale(1.05);
+}
+/* Flash Message ----------------------------------------------------------- */
+
+#info {
+    position: fixed;
+    color: #fff;
+    background: #666;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px 20px;
+    left: 50%;
+    translate: -50% 0;
+    z-index: 999;
+
+    top: -100px;
+    opacity: 0;
+}
+
+#info:not(:empty) {
+    animation: fade 5s;
+}
+
+@keyframes fade {
+      0% { top: -100px; opacity: 0; }
+     10% { top:  100px; opacity: 1; }
+     90% { top:  100px; opacity: 1; }
+    100% { top: -100px; opacity: 0; }
+}

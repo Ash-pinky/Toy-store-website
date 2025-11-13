@@ -1,0 +1,91 @@
+<?php
+include '../base.php';
+
+// ----------------------------------------------------------------------------
+
+// (1) Authorization (member)
+auth('Member');
+
+// (2) Return order (based on id) belong to the user
+// TODO
+$id=req('id');
+$stm = $_db->prepare('
+    SELECT * FROM `order`
+    WHERE id = ? AND user_id = ?
+');
+$stm->execute([$id,$_user->id]);
+$o = $stm->fetch();
+if(!$o)redirect('history.php');
+
+// (3) Return items (and products) belong to the order
+// TODO
+$stm = $_db->prepare('
+    SELECT i.*, p.name, p.image
+    FROM item AS i, product AS p
+    WHERE i.product_id = p.id
+    AND i.order_id = ?
+');
+$stm->execute([$id]);
+$arr = $stm->fetchAll();
+
+// ----------------------------------------------------------------------------
+
+$_title = 'Order | Detail';
+include '../header.php';
+?>
+
+<form class="form">
+    <label>Order Id</label>
+    <b><?= $o->id ?></b>
+    <br>
+
+    <label>Datetime</label>
+    <div><?= $o->datetime ?></div>
+    <br>
+
+    <label>Count</label>
+    <div><?= $o->count ?></div>
+    <br>
+
+    <label>Total</label>
+    <div>RM <?= $o->total ?></div>
+    <br>
+</form>
+
+<p class="totalOrder"><?= count($arr) ?> item(s)</p>
+
+<table class="table-order-detail">
+    <tr>
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Price (RM)</th>
+        <th>Unit</th>
+        <th>Subtotal (RM)</th>
+    </tr>
+
+    <?php foreach ($arr as $i): ?>
+    <tr>
+        <td><?= $i->product_id ?></td>
+        <td><?= $i->name ?></td>
+        <td><?= $i->price ?></td>
+        <td><?= $i->unit ?></td>
+        <td>
+            <?= $i->subtotal ?>
+            <img src="../STAFF/Product/imgProduct/<?php echo $i->image; ?>" class="popup">
+        </td>
+    </tr>
+    <?php endforeach ?>
+
+    <tr>
+        <th colspan="3"></th>
+        <th><?= $o->count ?></th>
+        <th><?= $o->total ?></th>
+    </tr>
+</table>
+
+<p>
+    <button data-get="history.php">History</button>
+</p>
+
+<?php
+include '../foot.php';

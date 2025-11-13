@@ -1,0 +1,153 @@
+/*==============================Order details table===============================*/
+.table-order-detail{
+    width:85%;
+    border-collapse: collapse;
+    margin-left:10px;;
+}
+
+.table-order-detail th, .table-order-detail td {
+    border: 1px solid #333;
+    padding: 5px;
+}
+
+.table-order-detail th {
+    color: #fff;
+    background: #f03c0f;
+}
+
+.table-order-detail tr:hover td {
+    background: #f1dc60;
+}
+
+.table-order-detail td:last-child {
+    position: relative;
+}
+
+.table-order-detail .popup {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    translate: 5px -50%;
+    z-index: 999;
+    border: 1px solid #333;
+    display: none;
+}
+
+.table-order-detail tr:hover .popup {
+    display: block;
+}
+
+.detail th {
+    text-align: left;
+}
+
+
+.popup{
+    width: 100px;
+    height: 100px;
+}
+
+.totalOrder {
+    margin: 5px;       /* Resets any auto margins */
+    padding: 10px;  /* Optional: Adds slight vertical spacing */
+    text-align: left; /* Ensures text aligns left */
+}
+
+/*============================================Order history table==========================*/
+.table-order-history{
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.table-order-history th{
+    background: linear-gradient(45deg, #ffe29a, #ffbd86);
+    color: rgb(236, 96, 96);
+    padding: 12px;
+    font-size: 16px;
+    text-align: left;
+    border:1px solid rgb(136, 134, 134);
+}
+
+.table-order-history td {
+    padding: 12px;
+    font-size: 14px;
+    border:1px solid rgb(136, 134, 134);
+    text-align: left;
+}
+
+.table-order-history tr:hover td {
+    background: #f1dc60;
+}
+
+.table-order-history td:last-child {
+    position: relative;
+}
+
+.table-order-history .popup {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    translate: 5px -50%;
+    z-index: 999;
+    border: 1px solid #333;
+    display: none;
+}
+
+.table-order-history tr:hover .popup {
+    display: block;
+}
+
+/*=====================================================ORDER DETAIL TABLE=====================================*/
+.table-order-detail{
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.table-order-detail th{
+    background: linear-gradient(45deg, #ffe29a, #ffbd86);
+    color: rgb(236, 96, 96);
+    padding: 12px;
+    font-size: 16px;
+    text-align: left;
+    border:1px solid rgb(136, 134, 134);
+}
+
+.table-order-detail td {
+    padding: 12px;
+    font-size: 14px;
+    border:1px solid rgb(136, 134, 134);
+    text-align: left;
+}
+
+.table-order-detail tr:hover td {
+    background: #f1dc60;
+}
+
+.table-order-detail td:last-child {
+    position: relative;
+}
+
+.table-order-detail .popup {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    translate: 5px -50%;
+    z-index: 999;
+    border: 1px solid #333;
+    display: none;
+}
+
+.table-order-detail tr:hover .popup {
+    display: block;
+}
+

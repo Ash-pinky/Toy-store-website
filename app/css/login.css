@@ -1,0 +1,174 @@
+.signin-button,
+.create-button,
+.reset-button,
+.submit-button,
+.update-button {
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 13px 100px;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 12px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.signin-button:hover,
+.reset-button:hover,
+.submit-button:hover,
+.create-button:hover,
+.update-button:hover {
+    opacity: 0.7;
+}
+
+.login-container,
+.account-container,
+.update-container {
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 380px;
+    height: 430px;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.login-container{
+    background-color:white;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+.account-container {
+    height: 1000px;
+    margin-top: 30px;
+    background-color:white;
+    border-radius: 15px;
+   
+
+}
+
+
+.login-title,
+.account-title,
+.profile-title {
+    color: black;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.info-title {
+    display: block;
+    width: 380px;
+    color: black;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.input-holder {
+    margin-bottom: 12px;
+    width: 365px;
+    height: 20px;
+    font-size: 18px;
+    padding: 10px 0 12px 10px;
+    background-color: white;
+    border-color: black;
+    border-radius: 6px;
+    border: solid;
+    border-width: 2px;
+
+}
+
+.create-title {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.forget-password {
+    font-size: 15px;
+    color: black;
+}
+
+.forget-password:active {
+    color: red;
+}
+
+.update-container {
+    margin: 0 auto;
+    max-width: 400px;
+    background-color:white ;
+    height: 900px;
+    border-radius: 15px;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+.input-update {
+    width: 380px;
+    padding: 10px;
+    margin: 3px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
+.update-button {
+    margin-bottom: 10px;
+    
+    
+}
+
+.profile-upload {
+    display: block;
+    margin-top: 15px;
+    max-width: 200px;
+    border-radius: 50%;
+   
+    
+}
+
+.forget-container {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+.forget-title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  .forgetpassword-body{
+    background: #f0f2f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+
+  }
+
+  .forget-container .input-holder{
+    margin-bottom: 20px;
+  }
+
+.forget-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+
+

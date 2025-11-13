@@ -1,0 +1,79 @@
+/*Table Product Detail ---------------------------------------------------------*/
+.tabledetail {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.tabledetail th {
+    background: linear-gradient(45deg, #ffe29a, #ffbd86);
+    color: rgb(247, 67, 67);
+    padding: 12px;
+    font-size: 16px;
+    text-align: left;
+    border:1px solid rgb(136, 134, 134);
+}
+
+.tabledetail td {
+    padding: 12px;
+    font-size: 14px;
+    border:1px solid rgb(136, 134, 134);
+    text-align: left;
+}
+
+.tabledetail td img {
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tabledetail button.back {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #ffbd4a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.tabledetail button.back:hover {
+    background-color: #e8a039;
+}
+
+.product-detail-header {
+    margin-top: 10px;
+    color: red;
+    font-family: "Luckiest Guy", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  button.back {
+    background: linear-gradient(45deg, #ff8f95, #f8b5c4);
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+    display: block;
+}
+
+button.back:hover {
+    background: linear-gradient(45deg, #f7b52a, #ffd86b);
+}
+
+.totalOrder{
+    text-align: center;
+}

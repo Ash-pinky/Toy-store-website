@@ -1,0 +1,42 @@
+.OrderList{
+    margin-top: 10px;
+    color: rgb(34, 11, 78);
+    font-family: "Luckiest Guy", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:30px;
+    text-align: center;
+  
+  }
+
+.table-order-admin {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.table-order-admin th, .table-order-admin td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.table-order-admin th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.table-order-admin tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.orderstatus-title{
+    color: red;
+    font-family: "Luckiest Guy", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    padding: 10px 0px 12px 15px;
+    text-align: center;
+    
+}

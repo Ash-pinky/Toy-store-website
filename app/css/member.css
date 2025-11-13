@@ -1,0 +1,139 @@
+/*Table Member-------------------------------------------------------------------*/
+.member-header {
+    display: flex;
+    align-items: center;        /* vertically center */
+    justify-content: center;    /* horizontally center */
+    text-align: center;
+
+    height: 60px;               /* reduce height to remove tall top/bottom */
+    width: fit-content;
+    padding: 0 30px;
+
+    margin: 5px auto;          /* reduced top space */
+    border-radius: 20px;
+    background: linear-gradient(135deg, #a78bfa, #c084fc);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    color: white;
+}
+
+.member-header h2 {                /* remove default top/bottom space */
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;             /* tighter vertical spacing */
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+}
+
+.tableMember {
+    width: 95%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 10px auto; /* ↓↓↓ changed from 50px to 10px */
+    background-color: #fefefe;
+    margin-bottom:90px;
+}
+
+.tableMember th, .tableMember td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.tableMember th {
+    background-color: #4f46e5;
+    color: white;
+    text-align: center;
+}
+
+.tableMember tr:hover {
+    background-color: #f3f4f6;
+}
+
+.tableMember img {
+    border-radius: 6px;
+    max-height: 80px;
+    object-fit: cover;
+    border: 1px solid #aaa;
+}
+
+.tableMember button {
+    background-color: #4f46e5;
+    color: white;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.tableMember button:hover {
+    background-color: #4338ca;
+}
+
+/* Member Detail Header */
+.member-detail-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: fit-content;
+    padding: 0 30px;
+    margin: 10px auto 5px auto; /* top center bottom left/right */
+    border-radius: 20px;
+    background: linear-gradient(135deg, #60a5fa, #818cf8);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    color: white;
+}
+
+.member-detail-header h2 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Member Detail Table */
+.memberDetail {
+    margin: 10px auto;
+    border-collapse: collapse;
+    width: 60%;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 50px; 
+}
+
+.memberDetail th,
+.memberDetail td {
+    padding: 10px 16px;
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.memberDetail th {
+    background-color: #6366f1;
+    color: white;
+    width: 30%;
+}
+
+.memberDetail img {
+    max-height: 150px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.searchmember{
+    margin-left:550px;
+    border-radius: 10px;
+}
+
+.searchmember button{
+    background-color: #6366f1;
+}

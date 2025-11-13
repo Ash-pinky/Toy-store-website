@@ -1,0 +1,48 @@
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+nav.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: linear-gradient(to bottom, #c0e7fc, #5fbbf8);
+    padding: 70px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+nav.profile a {
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #5a53c5, #2320ce);
+    padding: 25px 25px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 30px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav.profile a:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+nav.profile .headerProfile {
+    font-size: 40px;
+    font-weight: regular;
+    color: #070650;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    cursor: default;
+    background: none;
+    padding: 0;
+    font-family: "Luckiest Guy", serif;
+}
+
