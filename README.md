@@ -50,9 +50,9 @@ Features both **Customer** and **Admin** sides:
 
 ## Quick Start
 
-# 1. Start XAMPP → Make sure Apache and MySQL are running.
+### 1. Start XAMPP → Make sure Apache and MySQL are running.
 
-# 2. Run the project:
+### 2. Run the project:
 Double-click start.bat inside the root of the folder:
 
 start.bat
