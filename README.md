@@ -23,7 +23,7 @@ Features both **Customer** and **Admin** sides:
 - Email: `admin1@gmail.com`  
 - Password: `password1`
 
-> ⚠️ These are sample accounts intended for local testing only. Do not use real personal credentials in a public repo.
+> ⚠️ These are sample accounts intended for local testing only.
 
 ---
 
